@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Una Pregunta Especial 💖</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Pantalla inicial con la carta -->
+    <div id="cover-screen">
+        <img src="images/closed_letter.png" id="closed-letter">
+        <button id="open-button">Abrir Carta 💌</button>
+    </div>
+
+    <!-- Contenido principal (oculto al inicio) -->
+    <div class="container hidden">
+        <img class="image" src="images/catflower.jpg" id="main-image">
+        <h1 id="name">¡Hey preciosa! ❤️</h1>
+        <p id="question">¿Quieres ser<br> mi <br> &nbsp; San Valentín? 💘</p>
+        <div class="buttons">
+            <button id="yes-button" onclick="showMessage('Si')">Sí</button>
+            <button id="no-button" onclick="showMessage('No')">No</button>
+        </div>
+        <div id="message" class="hidden">
+            <p id="response-text"></p>
+            <img id="nuby-image" class="hidden" src="images/Nuby2.jpg"> <!-- Nueva imagen -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
